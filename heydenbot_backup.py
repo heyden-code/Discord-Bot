@@ -26,13 +26,13 @@ async def on_message(message):
 		janken_start = janken()
 		await message.channel.send(janken_start)
 		
-		if janken_input == "$batu" and "$Batu":
-			if janken_start == "Batu":
-				await message.channel.send("\n Seri bray")
-			elif janken_start == "Gunting":
-				await message.channel.send("\n Mantap menang boss")
+		if janken_input == ("$batu") and ("$Batu"):
+			if janken_start == ("Batu"):
+				await message.channel.send('\n Seri bray')
+			elif janken_start == ("Gunting"):
+				await message.channel.send('\n Mantap menang boss')
 			else:
-				await message.channel.send("\n Lah kalah sama bot")
+				await message.channel.send('\n Lah kalah sama bot')
 
-client.run('ODI1NTc3ODQ2NDk0ODU1MTk4.YF_9SQ.OKqmZu-IsuthhVcUNjiPX0bdzVU') 
+client.run('ODI1NTc3ODQ2NDk0ODU1MTk4.YF_9SQ.5Z_lzncICXaLDOA9Tdo05-dDG54') 
 
