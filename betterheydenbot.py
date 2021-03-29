@@ -2,6 +2,10 @@ import discord
 from discord.ext import commands
 import random
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = commands.Bot(command_prefix = '$')
 
@@ -22,4 +26,4 @@ for filename in os.listdir('./cogs'):
 	if filename.endswith('.py'):
 		client.load_extension(f'cogs.{filename[:-3]}')
 
-client.run('ODI1NTc3ODQ2NDk0ODU1MTk4.YF_9SQ.5Z_lzncICXaLDOA9Tdo05-dDG54')
+client.run(TOKEN)
