@@ -7,5 +7,8 @@ class Bangun(commands.Cog):
 		self.client = client
 
 	@commands.command()
-	async def bangunin(self, ctx, target: discord_Member):
-		await client.say(target.mention + 'woy bangun woy')
+	async def bangunin(self, ctx, target: discord.Member):
+		await ctx.send(target.mention + ' woy bangun woy')
+
+def setup(client):
+	client.add_cog(Bangun(client))
