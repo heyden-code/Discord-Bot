@@ -1,1 +1,1 @@
-worker: python betterheydenbot.by
+worker: python betterheydenbot.py
