@@ -10,7 +10,7 @@ jawaban = [
             'Bener bet lu',
             'Sangat betuul',
             'wadu gatau gw sih kalo itu',
-            'Hmmmm... gayakin sih gw'
+            'Hmmmm... gayakin sih gw',
             'Kayaknya nggak deh',
             'Kata gw nggak sih',
             'Jangan ngarep lah',
