@@ -10,9 +10,21 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = commands.Bot(command_prefix = '$')
 
+client.lava_nodes = [
+	{
+		'host' : 'lava.link',
+		'port' : 80,
+		'rest_uri' : f'http://lava.link:80',
+		'identifier' : 'MAIN',
+		'password' : 'anything',
+		'region' : 'singapore'
+	}
+]
+
 @client.event
 async def on_ready():
 	print('We have logged in as {0.user}'.format(client))
+	client.load_extension('dismusic')
 
 
 @client.command()
