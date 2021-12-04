@@ -8,7 +8,7 @@ class Pentung(commands.Cog):
 
     @commands.command()
     async def pentung(self, ctx, target: discord.Member):
-        await ctx.send(target.mention + "PRIIIIIIT :U+1F4A5: :U+1F528: HEY ")
+        await ctx.send(target.mention + "PRIIIIIIT :boom: :hammer: HEY ")
 
 def setup(client):
     client.add_cog(Pentung(client))
